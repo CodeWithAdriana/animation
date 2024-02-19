@@ -1,1 +1,1 @@
- https://codewithadriana.github.io/animation.io/
+ https://codewithadriana.github.io/animation
