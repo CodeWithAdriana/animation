@@ -9,11 +9,11 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 60px 60px 1fr 60px;
-    grid-template-areas: 
-    "navbar"
-    "filter"
-    "productos"
-    "footer"
+    grid-template-areas:
+        "navbar"
+        "filter"
+        "productos"
+        "footer"
     ;
 }
 
@@ -38,7 +38,7 @@
     width: 30px;
 }
 
-.nav ul{
+.nav ul {
     display: none;
 }
 
@@ -53,11 +53,11 @@
     gap: 5px;
 }
 
-.filter span{
+.filter span {
     font-size: 18px;
 }
 
-.button-precio{
+.button-precio {
     width: 90px;
 }
 
@@ -89,7 +89,7 @@
     transition: all .3s;
 }
 
-.boxes:hover{
+.boxes:hover {
     border: 1px solid #f2999e;
     box-shadow: 0002px rgb(1, 1, 249);
 }
@@ -100,7 +100,7 @@
     filter: grayscale(100%);
 }
 
-.img_card:hover{
+.img_card:hover {
     filter: grayscale(0%);
     transform: scale(1.005);
 
@@ -122,20 +122,20 @@
     border-radius: 5px;
 }
 
-.navegation{
+.navegation {
     margin-bottom: 7px;
-    display: flex;    
+    display: flex;
 }
 
-.navegation >button{
+.navegation>button {
     width: 30px;
     height: 30px;
     color: blue;
 }
 
-footer{
+footer {
     background-color: #2F001C;
-    color: white;    
+    color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -144,37 +144,39 @@ footer{
 }
 
 
-.img_footer{
+.img_footer {
     width: 20px;
-    color: white;    
+    color: white;
     display: flex;
     align-items: center;
     transition: all .3s;
 }
 
-.img_footer:hover{
+.img_footer:hover {
     box-shadow: 0002px rgb(1, 1, 249);
 }
-}
 
-@media(min-width:576px){
+
+@media(min-width:576px) {
     * {
         margin: 0;
         padding: 0;
     }
+
     .container {
         background-color: #ffc9cb;
         grid-template-columns: 175px 1fr;
-        grid-template-rows: 50px  1fr 80px;
-        grid-template-areas: 
-        "navbar filter"
-        "navbar productos"
-        "footer productos"
+        grid-template-rows: 50px 1fr 80px;
+        grid-template-areas:
+            "navbar filter"
+            "navbar productos"
+            "footer productos"
         ;
         height: auto;
     }
-/* Aqui empieza el navbar */
-    .nav{
+
+    /* Aqui empieza el navbar */
+    .nav {
         flex-direction: column;
         justify-content: start;
     }
@@ -190,15 +192,15 @@ footer{
         width: 48px;
     }
 
-    .logo_cont h1{
+    .logo_cont h1 {
         text-align: center;
     }
 
-    .bars{
+    .bars {
         display: none;
     }
 
-    .nav ul{
+    .nav ul {
         display: flex;
         flex-direction: column;
         padding: 13px;
@@ -207,22 +209,24 @@ footer{
         margin: 7px;
         gap: 8px;
     }
+
     /* Aqui termina el navbar */
 
-/* aqui comienza la section */
-.filter {
-    background-color: rgb(215, 215, 253);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    /* aqui comienza la section */
+    .filter {
+        background-color: rgb(215, 215, 253);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.button-precio{
-    width: 100%;
-}
-/* aqui termina la section */
+    .button-precio {
+        width: 100%;
+    }
 
-/* comienzo de la section que contiene las boxes */
+    /* aqui termina la section */
+
+    /* comienzo de la section que contiene las boxes */
     .container_card {
         flex-direction: row;
         flex-wrap: wrap;
@@ -230,7 +234,7 @@ footer{
         align-items: center;
     }
 
-    
+
     .boxes {
         display: flex;
         flex-direction: column;
@@ -249,7 +253,7 @@ footer{
         align-items: center;
     }
 
-    .navegation >button{
+    .navegation>button {
         width: 35px;
         height: 21px;
         color: blue;
@@ -257,17 +261,17 @@ footer{
 
     /* Finalizo las boxes */
 
-    footer{
+    footer {
         background-color: #fb04e6;
-        color: white;    
+        color: white;
         align-items: center;
         flex-direction: column;
     }
 
 
-    .img_footer{
+    .img_footer {
         width: 20px;
-        color: white;    
+        color: white;
         display: flex;
         align-items: center;
         flex-direction: row;
