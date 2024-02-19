@@ -149,6 +149,12 @@ footer{
     color: white;    
     display: flex;
     align-items: center;
+    transition: all .3s;
+}
+
+.img_footer:hover{
+    box-shadow: 0002px rgb(1, 1, 249);
+}
 }
 
 @media(min-width:576px){
